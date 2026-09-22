@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Audio examples for Continual Residual Memory in speech enhancement.">
     <title>Continual Residual Memory — Audio Demo</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
   </head>
   <body>
     <header>
@@ -28,23 +28,22 @@
 
         <article class="sample">
           <p class="dataset-label">DNS</p>
-          <h3>expensive team trips are you utilizing vending machine proceeds to help pay for your program if you use parking attendants can they be replaced by automatic</h3>
           <div class="comparison-scroll">
             <div class="comparison-grid">
-              <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/cmgan_dns_a_noisy.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">CMGAN</span><audio controls preload="none" src="static/audio/cmgan_dns_a_backbone.wav"></audio></div>
-              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><audio controls preload="none" src="static/audio/cmgan_dns_a_crm.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/cmgan_dns_a_clean.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 1.25</span><audio controls preload="none" src="static/audio/cmgan_dns_a_noisy.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">CMGAN</span><span class="media-metric">PESQ 2.65</span><audio controls preload="none" src="static/audio/cmgan_dns_a_backbone.wav"></audio></div>
+              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><span class="media-metric">PESQ 3.08</span><span class="media-delta">+0.44 vs. CMGAN</span><audio controls preload="none" src="static/audio/cmgan_dns_a_crm.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/cmgan_dns_a_clean.wav"></audio></div>
             </div>
           </div>
           <details>
             <summary>Show spectrograms</summary>
             <div class="comparison-scroll">
               <div class="comparison-grid spectrogram-grid">
-                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
-                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_backbone.png?v=3" alt="CMGAN output spectrogram"></div>
-                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_crm.png?v=3" alt="CMGAN plus CRM output spectrogram"></div>
-                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_clean.png?v=3" alt="Clean speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_noisy.png?v=4" alt="Noisy speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_backbone.png?v=4" alt="CMGAN output spectrogram"></div>
+                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_crm.png?v=4" alt="CMGAN plus CRM output spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_dns_a_clean.png?v=4" alt="Clean speech spectrogram"></div>
               </div>
             </div>
           </details>
@@ -52,23 +51,22 @@
 
         <article class="sample">
           <p class="dataset-label">DNS</p>
-          <h3>a rabbit punch redoubled him no more could he defend himself against them why he is going to kill me he thought wildly beat me to death in front of a hundred people wait a little while</h3>
           <div class="comparison-scroll">
             <div class="comparison-grid">
-              <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/cmgan_dns_b_noisy.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">CMGAN</span><audio controls preload="none" src="static/audio/cmgan_dns_b_backbone.wav"></audio></div>
-              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><audio controls preload="none" src="static/audio/cmgan_dns_b_crm.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/cmgan_dns_b_clean.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 1.53</span><audio controls preload="none" src="static/audio/cmgan_dns_b_noisy.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">CMGAN</span><span class="media-metric">PESQ 3.14</span><audio controls preload="none" src="static/audio/cmgan_dns_b_backbone.wav"></audio></div>
+              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><span class="media-metric">PESQ 3.46</span><span class="media-delta">+0.32 vs. CMGAN</span><audio controls preload="none" src="static/audio/cmgan_dns_b_crm.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/cmgan_dns_b_clean.wav"></audio></div>
             </div>
           </div>
           <details>
             <summary>Show spectrograms</summary>
             <div class="comparison-scroll">
               <div class="comparison-grid spectrogram-grid">
-                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
-                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_backbone.png?v=3" alt="CMGAN output spectrogram"></div>
-                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_crm.png?v=3" alt="CMGAN plus CRM output spectrogram"></div>
-                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_clean.png?v=3" alt="Clean speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_noisy.png?v=4" alt="Noisy speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_backbone.png?v=4" alt="CMGAN output spectrogram"></div>
+                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_crm.png?v=4" alt="CMGAN plus CRM output spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_dns_b_clean.png?v=4" alt="Clean speech spectrogram"></div>
               </div>
             </div>
           </details>
@@ -76,23 +74,22 @@
 
         <article class="sample">
           <p class="dataset-label">EARS-D</p>
-          <h3>It might happen, he added with an involuntary smile. It is sold, sir, was again his laconic reply. And you must have some water, my dear fellow. What is that flying about? Who wants a dead cert for the Gold cup?</h3>
           <div class="comparison-scroll">
             <div class="comparison-grid">
-              <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/cmgan_ears_a_noisy.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">CMGAN</span><audio controls preload="none" src="static/audio/cmgan_ears_a_backbone.wav"></audio></div>
-              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><audio controls preload="none" src="static/audio/cmgan_ears_a_crm.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/cmgan_ears_a_clean.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 1.80</span><audio controls preload="none" src="static/audio/cmgan_ears_a_noisy.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">CMGAN</span><span class="media-metric">PESQ 1.19</span><audio controls preload="none" src="static/audio/cmgan_ears_a_backbone.wav"></audio></div>
+              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><span class="media-metric">PESQ 2.46</span><span class="media-delta">+1.27 vs. CMGAN</span><audio controls preload="none" src="static/audio/cmgan_ears_a_crm.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/cmgan_ears_a_clean.wav"></audio></div>
             </div>
           </div>
           <details>
             <summary>Show spectrograms</summary>
             <div class="comparison-scroll">
               <div class="comparison-grid spectrogram-grid">
-                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
-                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_backbone.png?v=3" alt="CMGAN output spectrogram"></div>
-                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_crm.png?v=3" alt="CMGAN plus CRM output spectrogram"></div>
-                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_clean.png?v=3" alt="Clean speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_noisy.png?v=4" alt="Noisy speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_backbone.png?v=4" alt="CMGAN output spectrogram"></div>
+                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_crm.png?v=4" alt="CMGAN plus CRM output spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_ears_a_clean.png?v=4" alt="Clean speech spectrogram"></div>
               </div>
             </div>
           </details>
@@ -100,23 +97,22 @@
 
         <article class="sample">
           <p class="dataset-label">EARS-D</p>
-          <h3>The difference in the rainbow depends considerably upon the size of the drops, and the width of the colored band increases as the size of the drops increases. The actual primary rainbow observed is said to be the effect of super-imposition of a number of bows.</h3>
           <div class="comparison-scroll">
             <div class="comparison-grid">
-              <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/cmgan_ears_b_noisy.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">CMGAN</span><audio controls preload="none" src="static/audio/cmgan_ears_b_backbone.wav"></audio></div>
-              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><audio controls preload="none" src="static/audio/cmgan_ears_b_crm.wav"></audio></div>
-              <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/cmgan_ears_b_clean.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 1.44</span><audio controls preload="none" src="static/audio/cmgan_ears_b_noisy.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">CMGAN</span><span class="media-metric">PESQ 2.35</span><audio controls preload="none" src="static/audio/cmgan_ears_b_backbone.wav"></audio></div>
+              <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><span class="media-metric">PESQ 2.62</span><span class="media-delta">+0.26 vs. CMGAN</span><audio controls preload="none" src="static/audio/cmgan_ears_b_crm.wav"></audio></div>
+              <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/cmgan_ears_b_clean.wav"></audio></div>
             </div>
           </div>
           <details>
             <summary>Show spectrograms</summary>
             <div class="comparison-scroll">
               <div class="comparison-grid spectrogram-grid">
-                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
-                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_backbone.png?v=3" alt="CMGAN output spectrogram"></div>
-                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_crm.png?v=3" alt="CMGAN plus CRM output spectrogram"></div>
-                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_clean.png?v=3" alt="Clean speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_noisy.png?v=4" alt="Noisy speech spectrogram"></div>
+                <div class="media-cell"><span class="media-label">CMGAN</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_backbone.png?v=4" alt="CMGAN output spectrogram"></div>
+                <div class="media-cell crm"><span class="media-label">CMGAN + CRM</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_crm.png?v=4" alt="CMGAN plus CRM output spectrogram"></div>
+                <div class="media-cell"><span class="media-label">Clean</span><img loading="lazy" src="static/spectrograms/cmgan_ears_b_clean.png?v=4" alt="Clean speech spectrogram"></div>
               </div>
             </div>
           </details>
@@ -130,12 +126,11 @@
 
         <article class="sample">
           <p class="dataset-label">DNS</p>
-          <h3>smolderingly we can get it if we dig he said patiently we are lost and burning up already she bit out tensely they will roll off in another</h3>
           <div class="comparison-scroll"><div class="comparison-grid">
-            <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/gtcrn_a_noisy.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_a_backbone.wav"></audio></div>
-            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><audio controls preload="none" src="static/audio/gtcrn_a_crm.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/gtcrn_a_clean.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 3.19</span><audio controls preload="none" src="static/audio/gtcrn_a_noisy.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">GTCRN</span><span class="media-metric">PESQ 2.27</span><audio controls preload="none" src="static/audio/gtcrn_a_backbone.wav"></audio></div>
+            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><span class="media-metric">PESQ 3.36</span><span class="media-delta">+1.09 vs. GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_a_crm.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/gtcrn_a_clean.wav"></audio></div>
           </div></div>
           <details><summary>Show spectrograms</summary><div class="comparison-scroll"><div class="comparison-grid spectrogram-grid">
             <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/gtcrn_a_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
@@ -147,12 +142,11 @@
 
         <article class="sample">
           <p class="dataset-label">DNS</p>
-          <h3>a throw of flame marine wet also were the marines fatigues and the face had an oily film before much longer the marine quieted down</h3>
           <div class="comparison-scroll"><div class="comparison-grid">
-            <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/gtcrn_b_noisy.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_b_backbone.wav"></audio></div>
-            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><audio controls preload="none" src="static/audio/gtcrn_b_crm.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/gtcrn_b_clean.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 2.10</span><audio controls preload="none" src="static/audio/gtcrn_b_noisy.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">GTCRN</span><span class="media-metric">PESQ 1.61</span><audio controls preload="none" src="static/audio/gtcrn_b_backbone.wav"></audio></div>
+            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><span class="media-metric">PESQ 2.35</span><span class="media-delta">+0.75 vs. GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_b_crm.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/gtcrn_b_clean.wav"></audio></div>
           </div></div>
           <details><summary>Show spectrograms</summary><div class="comparison-scroll"><div class="comparison-grid spectrogram-grid">
             <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/gtcrn_b_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
@@ -164,12 +158,11 @@
 
         <article class="sample">
           <p class="dataset-label">DNS</p>
-          <h3>momentary charm and become oppressive the many bodied girl lay near him she radiated warmth and good fellowship we can die too we can die like real</h3>
           <div class="comparison-scroll"><div class="comparison-grid">
-            <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/gtcrn_c_noisy.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_c_backbone.wav"></audio></div>
-            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><audio controls preload="none" src="static/audio/gtcrn_c_crm.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/gtcrn_c_clean.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 1.82</span><audio controls preload="none" src="static/audio/gtcrn_c_noisy.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">GTCRN</span><span class="media-metric">PESQ 1.38</span><audio controls preload="none" src="static/audio/gtcrn_c_backbone.wav"></audio></div>
+            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><span class="media-metric">PESQ 2.03</span><span class="media-delta">+0.64 vs. GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_c_crm.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/gtcrn_c_clean.wav"></audio></div>
           </div></div>
           <details><summary>Show spectrograms</summary><div class="comparison-scroll"><div class="comparison-grid spectrogram-grid">
             <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/gtcrn_c_noisy.png?v=3" alt="Noisy speech spectrogram"></div>
@@ -181,12 +174,11 @@
 
         <article class="sample">
           <p class="dataset-label">DNS</p>
-          <h3>dad do academic bidding beg that guard for one gallon of gas help greg to pick a peck of potatoes this was easy for us get a calico cat to keep</h3>
           <div class="comparison-scroll"><div class="comparison-grid">
-            <div class="media-cell"><span class="media-label">Noisy</span><audio controls preload="none" src="static/audio/gtcrn_d_noisy.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_d_backbone.wav"></audio></div>
-            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><audio controls preload="none" src="static/audio/gtcrn_d_crm.wav"></audio></div>
-            <div class="media-cell"><span class="media-label">Clean</span><audio controls preload="none" src="static/audio/gtcrn_d_clean.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Noisy</span><span class="media-metric">PESQ 2.47</span><audio controls preload="none" src="static/audio/gtcrn_d_noisy.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">GTCRN</span><span class="media-metric">PESQ 2.45</span><audio controls preload="none" src="static/audio/gtcrn_d_backbone.wav"></audio></div>
+            <div class="media-cell crm"><span class="media-label">GTCRN + CRM</span><span class="media-metric">PESQ 3.13</span><span class="media-delta">+0.68 vs. GTCRN</span><audio controls preload="none" src="static/audio/gtcrn_d_crm.wav"></audio></div>
+            <div class="media-cell"><span class="media-label">Clean</span><span class="media-metric">Reference</span><audio controls preload="none" src="static/audio/gtcrn_d_clean.wav"></audio></div>
           </div></div>
           <details><summary>Show spectrograms</summary><div class="comparison-scroll"><div class="comparison-grid spectrogram-grid">
             <div class="media-cell"><span class="media-label">Noisy</span><img loading="lazy" src="static/spectrograms/gtcrn_d_noisy.png?v=3" alt="Noisy speech spectrogram"></div>

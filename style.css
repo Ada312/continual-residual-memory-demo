@@ -107,7 +107,7 @@ h3 {
 }
 
 .sample {
-  padding: 30px 0 6px;
+  padding: 26px 0 6px;
   border-top: 1px solid var(--line);
 }
 
@@ -152,11 +152,30 @@ h3 {
 
 .media-label {
   display: block;
-  min-height: 24px;
-  margin-bottom: 9px;
+  min-height: 22px;
+  margin-bottom: 2px;
   color: #48524f;
   font-size: 0.86rem;
   font-weight: 650;
+}
+
+.media-metric,
+.media-delta {
+  display: block;
+  min-height: 20px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
+.media-delta {
+  min-height: 18px;
+  color: #627d75;
+  font-weight: 650;
+}
+
+.media-cell:not(.crm) .media-metric {
+  margin-bottom: 18px;
 }
 
 audio {
@@ -185,6 +204,10 @@ summary {
 
 .spectrogram-grid .media-cell {
   padding: 9px;
+}
+
+.spectrogram-grid .media-label {
+  margin-bottom: 9px;
 }
 
 .spectrogram-grid img {
